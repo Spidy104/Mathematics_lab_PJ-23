@@ -1,13 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x0 = 0
-xn = [i * 0.1 for i in range(1, 4)]
-h = 0.1
+x0, xn = list(map(float, input("Enter the starting and ending points: ").split()))
+h = float(input("Enter the step size: "))
 y0 = float(input("Enter the initial condition: "))
 n = (xn - x0) / h
 print(n)
-f = lambda x, y: x*y + pow(y, 2)
+f = lambda x, y: (y - x) / (y + x)
 y = y0
 X = np.zeros(int(n + 2))
 Y = np.zeros(int(n + 2))
