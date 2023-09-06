@@ -6,7 +6,7 @@ h = float(input("Enter the step size: "))
 y0 = float(input("Enter the initial condition: "))
 n = (xn - x0) / h
 print(n)
-f = lambda x, y: (y - x) / (y + x)
+f = lambda x, y: x*y + pow(y, 2)
 y = y0
 X = np.zeros(int(n + 2))
 Y = np.zeros(int(n + 2))

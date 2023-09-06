@@ -1,5 +1,3 @@
-from typing import Callable, Any
-
 x0 = float(input("Enter the starting point: "))
 xn = float(input("Enter the ending point: "))
 h = float(input("Enter the step size: "))

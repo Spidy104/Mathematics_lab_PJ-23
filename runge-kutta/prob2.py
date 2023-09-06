@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x0 = 0
-xn = [i * 0.1 for i in range(1, 4)]
+x0, xn = list(map(float, input("Enter the starting and ending values: ").split()))
 h = 0.1
 y0 = float(input("Enter the initial condition: "))
 n = (xn - x0) / h
